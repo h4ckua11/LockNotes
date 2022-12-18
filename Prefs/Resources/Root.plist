@@ -1,0 +1,106 @@
+{
+	"items" = (
+		{
+			cell = "PSGroupCell";
+			label = "Enable/Disable";
+			footerText = "Set here if it should be displayed or not.";
+		},
+		{
+			cell = "PSSwitchCell";
+			label = "Enabled";
+			key = "enabledSwitch";
+			defaults = "com.h4ckua11.locknotes";
+			set = "updateState";
+		},
+		{
+			cell = "PSGroupCell";
+			label = "Text";
+			footerText = "Here you can set your text that you want to be displayed. Just enter/change the text and tap 'Save'.";
+		},
+		{
+			cell = "PSButtonCell";
+			label = "Set Text";
+			action = "didTapSetText";
+		},
+		{
+			cell = "PSGroupCell";
+			label = "Font";
+			footerText = "You can set your font and the size here.";
+		},
+		{
+			cell = "PSLinkCell";
+			label = "Change Font";
+			detail = "LKNFontViewController";
+			isController = true;
+		},
+		{
+			cell = "PSEditTextCell";
+			label = "Font Size";
+			placeholder = "e.g. 18pt";
+			isNumeric = true;
+			default = "15";
+			defaults = "com.h4ckua11.locknotes";
+			key = "fontSize";
+		},
+		{
+			cell = "PSGroupCell";
+			label = "Font Colour";
+			footerText = "You can set your font colour here.";
+		},
+		{
+			cell = "PSLinkCell";
+			cellClass = "SparkColourPickerCell";
+			libsparkcolourpicker = {
+				defaults = "com.h4ckua11.locknotes";
+				fallback = "#000000";
+				alpha = true;
+			};
+			label = "Font Colour";
+			key = "fontColour";
+		},
+		{
+			cell = "PSGroupCell";
+			label = "Text Alignment";
+			footerText = "You can set your text alignment here.";
+		},
+		{
+			cell = "PSSegmentCell";
+			label = "Text Alignment";
+			key = "textAlignment";
+			validTitles = ("Left","Center","Right");
+			validValues = ("left","center","right");
+			default = "left";
+			defaults = "com.h4ckua11.locknotes";
+		},
+		{
+			cell = "PSGroupCell";
+			label = "Y - Padding";
+			footerText = "You change the space between the statusbar and the textfield here.";
+		},
+		{
+			cell = "PSSliderCell";
+			defaults = "com.h4ckua11.locknotes";
+			key = "paddingTop";
+			default = 0;
+			min = 0;
+			max = 500;
+			showValue = true;
+		},
+		{
+			cell = "PSGroupCell";
+			label = "Respring";
+			footerText = "A respring button cause why not.";
+		},
+		{
+			cell = "PSButtonCell";
+			label = "Respring";
+			action = "respringNow";
+		},
+		{
+			cell = "PSGroupCell";
+			footerText = "© LockNotes - h4ckua11";
+			footerAlignment = "1";
+		}
+	);
+	"title" = "LockNotes";
+}

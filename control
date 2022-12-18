@@ -1,0 +1,9 @@
+Package: com.h4ckua11.locknotes
+Name: LockNotes
+Architecture: iphoneos-arm
+Description: Just a tweak.
+Depends: mobilesubstrate, preferenceloader, com.spark.libsparkcolourpicker, libactivator
+Maintainer: h4ckua11
+Author: h4ckua11
+Section: Tweaks
+Version: 1.0.1
